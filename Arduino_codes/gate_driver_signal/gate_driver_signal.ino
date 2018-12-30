@@ -18,12 +18,12 @@ void loop() {
 }
 void pulse_1_2(){
   digitalWrite(pulse_a, HIGH);
-  delay(0.02);
+  delay(1); // milisecond %5 pulse width
   digitalWrite(pulse_a, LOW);
 }
 void pulse_3_4(){
   digitalWrite(pulse_a_180, HIGH);
-  delay(0.02);
+  delay(1); // milisecond %5 pulse width
   digitalWrite(pulse_a_180, LOW);
 
 }
