@@ -12,12 +12,13 @@ void loop() {
   
 }
 void pulse(){
+  // one period is 20 ms (50 Hz) 
   digitalWrite(pulse_a, HIGH);
-  delay(0.02);
+  delay(1); // milisecond %5 duty cycle pulse 
   digitalWrite(pulse_a, LOW);
-  delay(9.08);
+  delay(9); // 1+9 = 10 ms finishing the half cycle 
   digitalWrite(pulse_a_180, HIGH);
-  delay(0.02);
+  delay(1); // milisecond %5 duty cycle pulse 
   digitalWrite(pulse_a_180, LOW);
 }
 
